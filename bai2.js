@@ -1,0 +1,14 @@
+function abc() {
+    let num = window.prompt();
+    let str = num.toString();
+    let result = [str[0]];
+
+    for (let x = 1; x < str.length; x++) {
+        if ( str[x] % 2 === 0) {
+            result.push('-', str[x]);
+        } else {
+            result.push(str[x]);
+        }
+    }
+    document.write(result.join(''));
+}
